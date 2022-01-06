@@ -7,5 +7,13 @@ public class Student {
 	 int eng;
 	 int math;
 	int total;
-	double avg;
+	double avg;///데이터 저장 용도
+	
+	public void makeTotal() {
+		int total=0;
+		this.total=kor+eng+math;
+		this.avg=this.total/3.0;
+	}
+
+
 }
